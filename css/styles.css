@@ -1,0 +1,56 @@
+body{
+	background: #ffffff;
+}
+
+ #figura
+ {
+ 	background: red;
+ 	height: 200px;
+ 	width:200px;
+ 	animation-name:animacion1;
+ 	animation-duration:3s;
+ 	animation-fill-mode:forwards;
+
+ 	-webkit-animation-name:animacion1;
+ 	-webkit-animation-duration:3s;
+ 	-webkit-animation-fill-mode:forwards;
+
+ }
+
+ @keyframes animacion1{
+ 	from{
+
+ 		background: blue;
+ 		transform:translatey(-300px);
+
+
+ 	}
+ 	to{
+
+ 		background: yellow;
+ 		border-radius: 100px;
+ 		box-shadow: 0px 0px 50px solid red;
+ 		transform:scalex(1.9);
+ 		transform:translatey(0px);
+
+ 	}
+
+ }
+
+  @-webkit-keyframes animacion1{
+ 	from{
+
+ 		background: blue;
+ 		-webkit-transform:translatey(-300px);
+
+ 	}
+ 	to{
+
+ 		background: yellow;
+ 		border-radius: 100px;
+ 		box-shadow: 0px 0px 50px  red;
+ 		-webkit-transform:scalex(1.9);
+ 		-webkit-transform:translatey(0px);
+ 	}
+
+ }

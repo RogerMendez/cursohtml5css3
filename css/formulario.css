@@ -1,0 +1,21 @@
+.entrada{
+	width: 70%;
+	margin: 5px;
+}
+form{
+	margin: auto;
+}
+label{
+	color:blue;
+	font-weight: bold;
+	padding-right: 50px;
+	text-align: right;	
+}
+input{
+	padding: 5px;
+}
+input:focus{
+	outline: none;
+	box-shadow: 0px 0px 20px red;
+	border-radius: 10px;
+}

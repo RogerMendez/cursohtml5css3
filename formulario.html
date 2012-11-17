@@ -1,0 +1,76 @@
+<!DOCtype HTML>
+<html>
+	<head>
+		<title>Registro</title>
+		<link href='http://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/estilos.css">
+		<link rel="stylesheet" href="css/formulario.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<section id="contenedor">
+			<header>
+				<img src="imagenes/logo.jpg" >
+				<h1>Nuestra Primera Pagina</h1>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="ejemplo.html">Inicio</a></li>
+					<li><a href="">CONTACTO</a></li>
+					<li><a href="formulario.html">REGISTRO</a></li>
+					<li><a href="">INFORMACION</a></li>
+					<li><a href="">BUSCAR</a></li>
+				</ul>
+			</nav>
+			<section id="cuerpo">
+				<form action="" method="post">
+					<h4>REGISTRO PERSONA</h4>
+					<div class="entrada">
+						<label width="100px"
+ for="ci">Cedula de Identidad</label>						<input type="number" required placeholder="Cedula de identidad" min="1000000" max="9999999">
+					</div>
+					<div class="entrada">
+					<label for="nombre">NOMBRE:</label>
+					<input type="text" pattern="{a-zA-Z}[2]" name="nombre" id="nombre">
+					</div>
+					<div class="entrada">
+					<label for="apellidos">Apellidos:</label>
+					<input type="text" size="50" name>
+					</div>
+					<div class="entrada">
+					<label for="email">Correo Electronico</label>
+					<input type="email">
+					</div>
+					<div class="entrada">
+					<label for="direccion">Direccion WEB</label>
+					<input type="url">
+					</div>
+					<div class="entrada">
+					<label for="rango">SELECCION</label>
+					<input type="range" min="10" max="200" class="rango">
+					</div>
+				<div class="entrada">
+					<label for="">Fecha Nacimiento:</label>
+					<input type="date">
+					</div>
+					<div class="entrada">
+					<label for="contraseña">Contraseña:</label>
+					<input type="password">
+					</div>
+					<br><input type="submit" id="boton">
+					<div class='ver'>VER RANGO</div>
+					<script>
+						$(".ver").click(function()
+						{
+							var valor=$(".rango").val();
+							alert(valor);
+						});
+					</script>
+				</form>
+			</section>
+			<footer class="hola">
+				REALIZADO POR SIE SRL
+			</footer>
+		</section>
+	</body>
+</html>
